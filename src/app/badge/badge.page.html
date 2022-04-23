@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Séries</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let serie of series">
+    <ion-badge id="titulo" color="success">{{serie.titulo}}</ion-badge>
+    <ion-badge id="IMDb" color="warning">IMDb = {{serie.imdb}}</ion-badge>
+    <ion-item>
+      <ion-img [src]="serie.url"></ion-img>
+      <p>{{serie.enredo}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

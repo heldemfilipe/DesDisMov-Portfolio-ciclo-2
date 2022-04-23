@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Séries</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-tab-button (click)="presentToast('Friends')">
+      <ion-label>Friends</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="presentToast('How I Met Your Mother')">
+      <ion-label>How I Met Your Mother</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="presentToast('Sherlock Holmes')">
+      <ion-label>Sherlock Holmes</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="presentToast('Mr. Robot')">
+      <ion-label>Mr. Robot</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="presentToast('Moon Knight')">
+      <ion-label>Moon Knight</ion-label>
+    </ion-tab-button>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Segurança</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br />
+  <ion-button color="warning" (click)="dadosAlert()">Informe seus dados</ion-button>
+  <br />
+  <ion-list>
+    <button ion-item *ngFor="let d of dados">
+      Email: {{ d.email }} <br />  <br />
+      Telefone: {{ d.telefone }}
+    </button>
+  </ion-list>
+</ion-content>
